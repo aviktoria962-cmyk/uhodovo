@@ -1,10 +1,11 @@
 import s from './Header.module.css'
+import logoHead from '../../assets/images/logoHead.svg' 
 
 export function Header() {
   return (
     <header className={s.head1}>
       <a href="/">
-        <img src="/images/logoHead.svg" alt="Уходово" />
+        <img src={logoHead} alt="Уходово" />
       </a>
       <div className={s.headAll}>
         <nav className={s.head}>

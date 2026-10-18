@@ -1,8 +1,9 @@
 import s from './Banner.module.css'
+import bannerBg from '../../assets/images/banner.png'
 
 export function Banner() {
   return (
-    <div className={s.banZaliv}>
+    <div className={s.banZaliv} style={{ backgroundImage: `url(${bannerBg})` }}>
       <div className="container" id="banner">
         <div className={s.banText}>
           <h1 className={s.title}>Уход, которому<br /> можно доверять</h1>

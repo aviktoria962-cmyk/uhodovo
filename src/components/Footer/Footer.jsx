@@ -1,4 +1,5 @@
 import s from './Footer.module.css'
+import logoFoot from '../../assets/images/logoFoot.svg'
 
 export function Footer() {
   return (
@@ -6,10 +7,9 @@ export function Footer() {
       <footer className={s.footerContent}>
         <div className={s.logo}>
           <a href="/">
-            <img src="/images/logoFoot.svg" alt="Уходово" />
+            <img src={logoFoot} alt="Уходово" />
           </a>
         </div>
-
         <div className={s.headAll}>
           <nav className={s.head}>
             <a href="/" className={s.link}>Главная</a>
