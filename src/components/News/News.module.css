@@ -1,4 +1,6 @@
 .newsBlock {
+    max-width: 1300px;
+    margin: 0 auto;
     padding-top: 120px;
     display: flex;
     justify-content: space-between;

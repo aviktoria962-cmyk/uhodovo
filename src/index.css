@@ -1,26 +1,26 @@
 @font-face {
     font-family: "TRB";
-    src: url("../assets/fonts/tt_runs/TT-Runs-Trial-Bold.ttf");
+    src: url("/src/assets/fonts/tt_runs/TT-Runs-Trial-Bold.ttf");
 }
 @font-face {
     font-family: "TRDB";
-    src: url("../assets/fonts/tt_runs/TT-Runs-Trial-DemiBold.ttf");
+    src: url("/src/assets/fonts/tt_runs/TT-Runs-Trial-DemiBold.ttf");
 }
 @font-face {
     font-family: "TRM";
-    src: url("../assets/fonts/tt_runs/TT-Runs-Trial-Medium.ttf");
+    src: url("/src/assets/fonts/tt_runs/TT-Runs-Trial-Medium.ttf");
 }
 @font-face {
     font-family: "TTB";
-    src: url("../assets/fonts/TT-Travels/TT-Travels-Bold.otf");
+    src: url("/src/assets/fonts/TT-Travels/TT-Travels-Bold.otf");
 }
 @font-face {
     font-family: "TTM";
-    src: url("../assets/fonts/TT-Travels/TT-Travels-Medium.otf");
+    src: url("/src/assets/fonts/TT-Travels/TT-Travels-Medium.otf");
 }
 @font-face {
     font-family: "TTR";
-    src: url("../assets/fonts/TT-Travels/TT-Travels-Regular.otf");
+    src: url("/src/assets/fonts/TT-Travels/TT-Travels-Regular.otf");
 }
 
 * {
