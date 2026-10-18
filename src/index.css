@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "TRB";
+    src: url("/fonts/tt_runs/TT-Runs-Trial-Bold.ttf");
+}
+@font-face {
+    font-family: "TRDB";
+    src: url("/fonts/tt_runs/TT-Runs-Trial-DemiBold.ttf");
+}
+@font-face {
+    font-family: "TRM";
+    src: url("/fonts/tt_runs/TT-Runs-Trial-Medium.ttf");
+}
+@font-face {
+    font-family: "TTB";
+    src: url("/fonts/TT-Travels/TT-Travels-Bold.otf");
+}
+@font-face {
+    font-family: "TTM";
+    src: url("/fonts/TT-Travels/TT-Travels-Medium.otf");
+}
+@font-face {
+    font-family: "TTR";
+    src: url("/fonts/TT-Travels/TT-Travels-Regular.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #fff;
+}

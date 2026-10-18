@@ -1,0 +1,45 @@
+.cat {
+    width: 310px;
+    height: 603px;
+}
+
+.cat p {
+    color: black;
+    font-family: "TTR";
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.cat h3 {
+    color: black;
+    font-family: "TTM";
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.cat h4 {
+    color: black;
+    font-family: "TTR";
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+.catbut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 7px 95.5px;
+    color: black;
+    font-family: "TTR";
+    font-size: 20px;
+    background-color: #CBE3EF;
+    cursor: pointer;
+    width: 310px;
+    height: 40px;
+}
+
+.catbut:hover {
+    box-shadow: 0 0 0 1px #CBE3EF;
+    background-color: transparent;
+}

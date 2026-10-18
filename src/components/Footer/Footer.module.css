@@ -1,0 +1,53 @@
+.zalFoot {
+    background-color: black;
+    width: 100%;
+    height: 347px;
+}
+
+.footerContent {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo img {
+    width: 249px;
+    height: 40px;
+}
+
+.headAll {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.head {
+    width: 462px;
+    height: 50px;
+    background-color: #CBE3EF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 13px 40px;
+    border-radius: 50px;
+}
+
+.link {
+    font-family: "TTR";
+    font-size: 20px;
+    color: black;
+}
+
+.link:hover {
+    color: #4a7a8c;
+}

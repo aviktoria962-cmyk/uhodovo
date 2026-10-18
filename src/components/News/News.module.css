@@ -1,0 +1,85 @@
+.newsBlock {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 120px;
+}
+
+.newsInfo {
+    width: 50%;
+}
+
+.newsTitle {
+    font-family: "TRB";
+    font-size: 40px;
+    color: black;
+    padding-bottom: 30px;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.newsDesc {
+    font-family: "TTR";
+    font-size: 20px;
+    padding-bottom: 20px;
+    max-width: 572px;
+    line-height: 30px;
+    color: #2C2C2C;
+}
+
+.newsForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 572px;
+}
+
+.newsInput {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #CBE3EF;
+    border-radius: 20px;
+    padding: 14px 27px;
+    font-family: "TTR";
+    font-size: 18px;
+    background-color: transparent;
+    color: #2C2C2C;
+}
+
+.newsInput::placeholder {
+    color: #7FA0B0;
+}
+
+.newsBtn {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #CBE3EF;
+    font-family: "TTR";
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.newsBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+.newsImg {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.newsImg img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 40px;
+    object-fit: cover;
+}
