@@ -6,7 +6,7 @@ export function Banner() {
     <div className={s.banZaliv} style={{ backgroundImage: `url(${bannerBg})` }}>
       <div className={s.banText} id="banner">
         <h1 className={s.title}>Уход, которому<br /> можно доверять</h1>
-        <a href="/catalog" className={s.but2}>Перейти к покупкам</a>
+        <a href="#catalog" className={s.but2}>Перейти к покупкам</a>
       </div>
     </div>
   )

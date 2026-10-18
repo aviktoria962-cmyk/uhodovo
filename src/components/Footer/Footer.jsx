@@ -6,15 +6,15 @@ export function Footer() {
     <div className={s.zalFoot}>
       <footer className={s.footerContent}>
         <div className={s.logo}>
-          <a href="/">
+          <a href="#">
             <img src={logoFoot} alt="Уходово" />
           </a>
         </div>
         <div className={s.headAll}>
           <nav className={s.head}>
-            <a href="/" className={s.link}>Главная</a>
-            <a href="/catalog" className={s.link}>Каталог</a>
-            <a href="/tovar" className={s.link}>Корзина</a>
+            <a href="#" className={s.link}>Главная</a>
+            <a href="#catalog" className={s.link}>Каталог</a>
+            <a href="#tovar" className={s.link}>Корзина</a>
           </nav>
         </div>
       </footer>
