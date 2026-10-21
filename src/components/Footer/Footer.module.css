@@ -4,12 +4,10 @@
     height: 347px;
 }
 
-.footerContent {
+footer {
     padding-top: 80px;
     display: flex;
     justify-content: space-between;
-    max-width: 1300px;
-    margin: 0 auto;
 }
 
 .logo {
@@ -42,12 +40,12 @@
     border-radius: 50px;
 }
 
-.link {
+.head a {
     font-family: "TTR";
     font-size: 20px;
     color: black;
 }
 
-.link:hover {
+.head a:hover {
     color: #4a7a8c;
 }

@@ -1,19 +1,12 @@
-.head1 {
-    width: 100%;          
-    max-width: 1300px;     
-    margin: 0 auto;        
+header {
     padding-top: 25px;
-    padding-bottom: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.headAll {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+.head1 {
+    padding-bottom: 80px;
 }
 
 .head {
@@ -28,12 +21,19 @@
     border-radius: 50px;
 }
 
-.link {
+.head a {
     font-family: "TTR";
     font-size: 20px;
     color: black;
 }
 
-.link:hover {
+.head a:hover {
     color: #4a7a8c;
+}
+
+.headAll {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }

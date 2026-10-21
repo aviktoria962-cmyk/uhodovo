@@ -1,0 +1,87 @@
+.block1 {
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgs {
+    width: 650px;
+    height: 827px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.imgs img {
+    cursor: pointer;
+}
+
+.imgsMini {
+    display: flex;
+    gap: 10px;
+}
+
+.imgsMini img:hover {
+    opacity: 70%;
+}
+
+.description {
+    width: 580px;
+    height: 892px;
+}
+
+.title {
+    font-family: "TRB";
+    font-size: 50px;
+    color: black;
+    padding-bottom: 40px;
+}
+
+.h2Price {
+    font-family: "TRDB";
+    font-size: 40px;
+    color: black;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.tocart {
+    font-family: "TTR";
+    font-size: 20px;
+    color: black;
+    padding: 13px 127px;
+    border-radius: 20px;
+    background-color: #CBE3EF;
+    width: 460px;
+    height: 50px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.tocart:hover {
+    background-color: #CBE3EF;
+    border-color: #7FA0B0;
+    transform: translateY(-3px);
+    box-shadow: 10px 10px 15px rgba(127, 160, 176, 0.3);
+}
+
+.descTitle {
+    font-family: "TTR";
+    font-size: 30px;
+    color: black;
+}
+
+.descP {
+    font-family: "TTR";
+    font-size: 20px;
+    color: black;
+    padding-top: 20px;
+}
+
+.descP2 {
+    font-family: "TTR";
+    font-size: 20px;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

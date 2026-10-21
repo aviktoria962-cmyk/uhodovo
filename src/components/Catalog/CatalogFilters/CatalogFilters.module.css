@@ -1,0 +1,148 @@
+.filtAll {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.filt.active {
+    background-color: #CBE3EF;
+    padding: 13px 70px;
+    border-radius: 40px;
+}
+
+.filt.active a,
+.filt a {
+    color: black;
+    font-family: "TTR";
+    font-size: 20px;
+}
+
+.filt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 70px;
+    gap: 10px;
+    height: 50px;
+    border: 2px solid #CBE3EF;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.filt:hover {
+    background-color: #CBE3EF;
+}
+
+.filt.active:hover {
+    background-color: #B8D0DC;
+    transform: scale(1.1);
+}
+
+.searchPrice {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBtn {
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.searchBtn img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    background: transparent;
+}
+
+.searchBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 27px;
+    gap: 10px;
+    width: 638px;
+    height: 50px;
+    background: #CBE3EF;
+    border: 2px solid #CBE3EF;
+    border-radius: 40px;
+}
+
+.searchBox input {
+    background: transparent;
+    width: 100%;
+    font-size: 18px;
+    color: #333;
+    font-family: "TTR";
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+}
+
+.priceSelect {
+    width: 247px;
+    height: 50px;
+    border: 2px solid #CBE3EF;
+    border-radius: 40px;
+    padding: 0 40px 0 27px;
+    font-family: "TTR";
+    font-size: 18px;
+    color: #333;
+    background-color: transparent;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1L6 6L11 1' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+.priceSelect:invalid,
+.priceSelect option[value=""]:checked {
+    color: #7FA0B0;
+}
+
+.priceSelect:hover {
+    background-color: #F0F7FB;
+}
+
+.priceSelect:focus {
+    border-color: #7FA0B0;
+}
+
+.priceSelect option {
+    font-family: "TTR";
+    font-size: 18px;
+    color: #333;
+    background-color: white;
+    padding: 10px;
+}
+
+.tire {
+    font-family: "TTR";
+    font-size: 20px;
+    color: black;
+}
