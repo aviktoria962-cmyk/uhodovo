@@ -8,6 +8,7 @@ export const PATH = {
     Home: '/',
     Catalog: '/catalog',
     Product: '/product',
+    Cart: '/cart', // <--- Добавили путь для корзины
     NotFound: '*'
 }
 
@@ -17,6 +18,9 @@ export function Routing() {
             <Route path={PATH.Home} element={<HomePage />} />
             <Route path={PATH.Catalog} element={<CatalogPage />} />
             <Route path={PATH.Product} element={<ProductPage />} />
+            
+            <Route path={PATH.Cart} element={<PageNotFound />} /> 
+            
             <Route path={PATH.NotFound} element={<PageNotFound />} />
         </Routes>
     )

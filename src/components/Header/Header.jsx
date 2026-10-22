@@ -14,7 +14,7 @@ export function Header() {
                 <nav className={s.head}>
                     <Link to={PATH.Home} className={s.link}>Главная</Link>
                     <Link to={PATH.Catalog} className={s.link}>Каталог</Link>
-                    <Link to={PATH.Product} className={s.link}>Корзина</Link>
+                    <Link to={PATH.Cart} className={s.link}>Корзина</Link> 
                 </nav>
             </div>
         </header>
