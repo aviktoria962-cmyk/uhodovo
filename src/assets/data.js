@@ -13,4 +13,8 @@ export const products = [
   { id: "6", title: "Лосьон для тела со сладким ароматом", description: "Питательный лосьон с нежным ароматом.", price: 1332, categoryId: "2", image: "https://i.pinimg.com/1200x/f2/44/ad/f244ad5d23910f86f342bfd26cbd93da.jpg" },
   { id: "7", title: "Увлажняющее молочко для тела тройного действия", description: "Глубокое увлажнение на 24 часа.", price: 1579, categoryId: "2", image: "https://i.pinimg.com/736x/21/88/a1/2188a14de3729b7a99fd3368e270bbee.jpg" },
   { id: "8", title: "Питательное жидкое мыло для рук и тела", description: "Мягкое очищение с ухаживающими маслами.", price: 1170, categoryId: "2", image: "https://i.pinimg.com/1200x/36/e3/bd/36e3bd3f6ab1e000cd98f5c67ad7d856.jpg" },
+  { id: "9", title: "Крем—термозащита для волос", description: "Защищает волосы от высоких температур.", price: 1691, categoryId: "3", image: "https://i.pinimg.com/736x/bf/b2/75/bfb275872098c0892889241d2e57b54a.jpg" },
+  { id: "10", title: "Маска для волос профессиональная", description: "Восстанавливает структуру волос.", price: 4518, categoryId: "3", image: "https://i.pinimg.com/1200x/07/50/d1/0750d1c51229da913e177d442907e249.jpg" },
+  { id: "11", title: "Шампунь для жирной кожи головы", description: "Регулирует выработку себума.", price: 750, categoryId: "3", image: "https://i.pinimg.com/1200x/0b/92/b8/0b92b8f9f203ff6164f9dafde2644747.jpg" },
+  { id: "12", title: "Восстанавливающий кондиционер для волос", description: "Увлажняет и облегчает расчесывание.", price: 1006, categoryId: "3", image: "https://i.pinimg.com/736x/09/6d/d2/096dd226156fac9fc043edbdb4bc6a38.jpg" },
 ];
