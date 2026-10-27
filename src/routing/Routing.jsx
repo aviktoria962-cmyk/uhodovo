@@ -7,7 +7,7 @@ import { PageNotFound } from "../pages/PageNotFound/PageNotFound";
 export const PATH = {
     Home: '/',
     Catalog: '/catalog',
-    Product: '/product',
+    Product: '/product/:id', 
     NotFound: '*'
 }
 
@@ -17,7 +17,6 @@ export function Routing() {
             <Route path={PATH.Home} element={<HomePage />} />
             <Route path={PATH.Catalog} element={<CatalogPage />} />
             <Route path={PATH.Product} element={<ProductPage />} />
-            
             <Route path={PATH.NotFound} element={<PageNotFound />} />
         </Routes>
     )

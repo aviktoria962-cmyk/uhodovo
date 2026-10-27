@@ -1,26 +1,13 @@
-import { CatalogFilters } from './CatalogFilters/CatalogFilters'
-import { CatalogCard } from './CatalogCard/CatalogCard'
-import s from './Catalog.module.css'
+import { products } from '../../assets/data';
+import s from './Catalog.module.css';
+import { CatalogCard } from './CatalogCard/CatalogCard';
 
 export function Catalog() {
     return (
-        <>
-            <CatalogFilters />
-
-            <div className={s.catalog}>
-                <CatalogCard />
-                <CatalogCard />
-                <CatalogCard />
-                <CatalogCard />
-                <CatalogCard />
-                <CatalogCard />
-                <CatalogCard />
-                <CatalogCard />
-                <CatalogCard />
-                <CatalogCard />
-                <CatalogCard />
-                <CatalogCard />
-            </div>
-        </>
-    )
+        <div className={s.catalog}>
+            {products.map((product) => (
+                <CatalogCard key={product.id} product={product} />
+            ))}
+        </div>
+    );
 }

@@ -1,39 +1,36 @@
-import s from './ProductPage.module.css'
-import tovar1 from '../../assets/images/tovar1.png'
-import tovar2 from '../../assets/images/tovar2.png'
-import tovar3 from '../../assets/images/tovar3.png'
-import tovar4 from '../../assets/images/tovar4.png'
+import { useParams, Link } from 'react-router';
+import { products, categories } from '../../assets/data';
+import { PATH } from '../../routing/Routing';
+import s from './ProductPage.module.css';
 
 export function ProductPage() {
-  return (
-    <main className="container">
-      <div className={s.block1} id="tovar">
-        <div className={s.imgs}>
-          <img src={tovar1} alt="" />
-          <div className={s.imgsMini}>
-            <img src={tovar2} alt="" />
-            <img src={tovar3} alt="" />
-            <img src={tovar4} alt="" />
-          </div>
-        </div>
+    const { id } = useParams();
+    const product = products.find((p) => p.id === id);
 
+    if (!product) {
+        return <h2 style={{ textAlign: 'center', margin: '100px 0' }}>Товар не найден</h2>;
+    }
 
-        <div className={s.description}>
-          <h1 className={s.title}>ROUND LAB 1025 dokdo, 200ml</h1>
-          <h2 className={s.h2Price}>833 ₽</h2>
+    const category = categories.find((c) => c.id === product.categoryId);
 
-          <button type="button" className={s.tocart}>Добавить в корзину</button>
+    return (
+        <main className="container">
+            <div className={s.block1} id="tovar">
+                <div className={s.imgs}>
+                    <img src={product.image} alt={product.title} className={s.mainImg} />
+                </div>
 
-          <h3 className={s.descTitle}>Описание</h3>
-          <p className={s.descP}>Тонер для лица отшелушивает и увлажняет кожу, делает её гладкой и здоровой на вид и
-            дарит ощущение
-            свежести. Глубоководная морская вода с острова Токто, обогащенная минералами, поддерживает
-            оптимальный гидролипидный баланс.</p>
-          <p className={s.descP2}>Компонент HATCHING EX-07 мягко удаляет ороговевшие частицы и себум, чтобы сохранить
-            чистоту кожи.
-            Пантенол, аллантоин и бетаин защищают, успокаивают и снижают чувствительность.</p>
-        </div>
-      </div>
-    </main>
-  )
+                <div className={s.description}>
+                    <h1 className={s.title}>{product.title}</h1>
+                    <h2 className={s.h2Price}>{product.price.toLocaleString('ru-RU')} ₽</h2>
+
+                    <button type="button" className={s.tocart}>Добавить в корзину</button>
+
+                    <h3 className={s.descTitle}>Описание</h3>
+                    <p className={s.descP}>{product.description}</p>
+                    <p className={s.descP2}>Категория: {category?.title}</p>
+                </div>
+            </div>
+        </main>
+    );
 }

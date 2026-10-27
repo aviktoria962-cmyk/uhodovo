@@ -1,33 +1,28 @@
 .block1 {
     padding-bottom: 120px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .imgs {
     width: 650px;
-    height: 827px;
     display: flex;
-    gap: 30px;
     flex-direction: column;
+    gap: 30px;
 }
 
-.imgs img {
-    cursor: pointer;
-}
-
-.imgsMini {
-    display: flex;
-    gap: 10px;
-}
-
-.imgsMini img:hover {
-    opacity: 70%;
+.mainImg {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    background-color: #f5f5f7;
+    border-radius: 20px;
 }
 
 .description {
     width: 580px;
-    height: 892px;
 }
 
 .title {
@@ -42,7 +37,6 @@
     font-size: 40px;
     color: black;
     padding-bottom: 40px;
-    text-align: left;
 }
 
 .tocart {
@@ -59,8 +53,6 @@
 }
 
 .tocart:hover {
-    background-color: #CBE3EF;
-    border-color: #7FA0B0;
     transform: translateY(-3px);
     box-shadow: 10px 10px 15px rgba(127, 160, 176, 0.3);
 }
@@ -71,17 +63,9 @@
     color: black;
 }
 
-.descP {
+.descP, .descP2 {
     font-family: "TTR";
     font-size: 20px;
     color: black;
     padding-top: 20px;
-}
-
-.descP2 {
-    font-family: "TTR";
-    font-size: 20px;
-    color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
