@@ -1,22 +1,19 @@
 import s from './CatalogFilters.module.css'
 import search2 from '../../../assets/images/search2.svg'
 
-export function CatalogFilters() {
+export function CatalogFilters({ categories }) {
     return (
         <div className={s.filtAll}>
             <div className={s.filter}>
                 <div className={`${s.filt} ${s.active}`}>
                     <a href="#">Все</a>
                 </div>
-                <div className={s.filt}>
-                    <a href="#">Лицо</a>
-                </div>
-                <div className={s.filt}>
-                    <a href="#">Тело</a>
-                </div>
-                <div className={s.filt}>
-                    <a href="#">Волосы</a>
-                </div>
+
+                {categories.map((category) => (
+                    <div key={category.id} className={s.filt}>
+                        <a href="#">{category.title}</a>
+                    </div>
+                ))}
             </div>
 
             <div className={s.searchPrice}>
