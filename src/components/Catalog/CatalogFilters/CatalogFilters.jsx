@@ -1,14 +1,32 @@
-import s from './CatalogFilters.module.css'
-import search2 from '../../../assets/images/search2.svg'
+import { useState, useEffect } from 'react';
+import s from './CatalogFilters.module.css';
+import search2 from '../../../assets/images/search2.svg';
 
-export function CatalogFilters({ categories }) {
+export function CatalogFilters() {
+    const [categories, setCategories] = useState([]);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        (async function load() {
+            try {
+                const res = await fetch("http://localhost:3000/categories");
+                if (!res.ok) throw new Error(`Ошибка ${res.status}: ${res.statusText}`);
+                const data = await res.json();
+                setCategories(data);
+            } catch (error) {
+                setError(error.message);
+            }
+        })();
+    }, []);
+
+    if (error) return <p>Ошибка категорий: {error}</p>;
+
     return (
         <div className={s.filtAll}>
             <div className={s.filter}>
                 <div className={`${s.filt} ${s.active}`}>
                     <a href="#">Все</a>
                 </div>
-
                 {categories.map((category) => (
                     <div key={category.id} className={s.filt}>
                         <a href="#">{category.title}</a>
@@ -49,5 +67,5 @@ export function CatalogFilters({ categories }) {
                 </div>
             </div>
         </div>
-    )
+    );
 }

@@ -69,3 +69,37 @@
     color: black;
     padding-top: 20px;
 }
+
+/* Хлебные крошки */
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 32px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: "TTR";
+}
+
+.crumb {
+    color: #6e6e78;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-family: "TTR";
+}
+
+.crumb:hover {
+    color: #000;
+}
+
+.crumbSep {
+    color: #c5c5cc;
+    font-family: "TTR";
+}
+
+.crumbCurrent {
+    color: #000;
+    font-weight: 500;
+    font-family: "TTR";
+}
