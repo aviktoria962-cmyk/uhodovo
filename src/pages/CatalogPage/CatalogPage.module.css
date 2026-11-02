@@ -9,4 +9,21 @@
     text-align: center;
     font-family: "TRB";
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.filtersRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.searchSortRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    gap: 20px;
 }

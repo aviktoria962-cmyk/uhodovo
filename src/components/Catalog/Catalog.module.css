@@ -6,3 +6,18 @@
     max-width: 1300px;
     margin: 0 auto;
 }
+
+.state {
+    text-align: center;
+    font-family: "TTR";
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.stateError {
+    text-align: center;
+    font-family: "TTR";
+    font-size: 20px;
+    color: red;
+    margin-top: 40px;
+}

@@ -1,0 +1,39 @@
+.wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    font-family: "TTR";
+    font-size: 18px;
+    color: black;
+    white-space: nowrap;
+}
+
+.select {
+    width: 247px;
+    height: 50px;
+    border: 2px solid #CBE3EF;
+    border-radius: 40px;
+    padding: 0 40px 0 27px;
+    font-family: "TTR";
+    font-size: 18px;
+    color: #333;
+    background-color: transparent;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1L6 6L11 1' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+.select option {
+    font-family: "TTR";
+    font-size: 18px;
+    color: #333;
+    background-color: white;
+    padding: 10px;
+}

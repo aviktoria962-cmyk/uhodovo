@@ -1,0 +1,40 @@
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 27px;
+    gap: 10px;
+    width: 638px;
+    height: 50px;
+    background: #CBE3EF;
+    border: 2px solid #CBE3EF;
+    border-radius: 40px;
+}
+
+.input {
+    background: transparent;
+    width: 100%;
+    font-size: 18px;
+    color: #333;
+    font-family: "TTR";
+    border: none;
+    outline: none;
+}
+
+.searchBtn {
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.searchBtn img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
